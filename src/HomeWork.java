@@ -6,7 +6,7 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class HomeWork {
     public static void main(String[] args) {
-        /*int sum = 0;
+        int sum = 0;
         int allSum = 0;
 
         int[][] array = new int[][]{
@@ -25,7 +25,7 @@ public class HomeWork {
         allSum += sum;
         System.out.println(" сумма всех занчений " + " =" + " " + allSum);
         scanner.close();
-*/
+
         String[][] chessDesk = new String[8][8];
 
         for (int i = 0; i < chessDesk.length; i++) {
