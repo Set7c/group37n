@@ -1,12 +1,11 @@
 package Projekt;
 
-import InputLogic.Archive;
 
-import java.io.FileReader;
+
 import java.util.Scanner;
 
-public class Transfer {
-    public class ConsoleInterface {
+public class Execution {
+    public static class ConsoleInterface {
         private static final int MAX_ATTEMPTS = 3;
 
         public void run() {
@@ -21,11 +20,11 @@ public class Transfer {
                     System.out.println("Введите путь к файлу для обработки:");
                     String filePath = scanner.nextLine();
 
-                    Archive processor = new Archive(filePath);
+                    Parsing processor = new Parsing(filePath);
                     processor.readFile();
 
                 } else if (input.equals("2")) {
-                    ReportGenerator.saveReport();
+                    Archivation.saveReport();
                     System.out.println("Отчёт сохранён в файл: D:\\отчет.txt");
                 } else {
                     attempts++;
