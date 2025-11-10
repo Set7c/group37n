@@ -1,7 +1,6 @@
 package Projekt;
 
 
-
 import java.util.Scanner;
 
 public class Execution {
@@ -17,13 +16,13 @@ public class Execution {
                 String input = scanner.nextLine();
 
                 if (input.equals("1")) {
-                    System.out.println("Введите путь к файлу для обработки:");
-                    String filePath = scanner.nextLine();
 
-                    Parsing processor = new Parsing(filePath);
-                    processor.readFile();
+                    Parsing.readFile();
 
                 } else if (input.equals("2")) {
+                    String reportContent = Archivation.getReport();
+                    System.out.println("Результат обработки файла:");
+                    System.out.println(reportContent);
                     Archivation.saveReport();
                     System.out.println("Отчёт сохранён в файл: D:\\отчет.txt");
                 } else {
