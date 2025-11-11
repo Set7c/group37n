@@ -1,0 +1,12 @@
+This program is designed for transferring funds from one account to another. The beta version offers the ability to
+automatically transfer the entire amount from the first account to the second.
+Features:
+
+1.Supports only .txt file format.
+2.Overwrites the original file with updated balances upon success.
+3.Displays the result of operations on the screen.
+
+
+
+
+
